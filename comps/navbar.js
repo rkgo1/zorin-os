@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <Box>
+        <Box sx={{background:"#Acdcfc"}}>
             <Toolbar sx={{ background: '#Fff', borderRadius: '25px', width: '100%' }} >
                 <Box alignItems={'center'} justifyContent={'center'} display={'flex'} marginLeft={30} letterSpacing={4}>
                     <Button>Z</Button>
@@ -15,7 +15,7 @@ const Navbar = () => {
             </Toolbar>
             <br />
             <Box position={'fixed'} paddingRight={'80px'} marginLeft={'80px'}
-                sx={{background:'#fff', borderRadius: '25px', boxShadow: 2, height: 60 }} display='flex'>
+                sx={{ background: '#fff', borderRadius: '25px', boxShadow: 2, height: 60 }} display='flex'>
                 <Toolbar  >
                     <Box
                         display={'flex'}
@@ -36,7 +36,13 @@ const Navbar = () => {
                     </Box>
                 </Toolbar>
             </Box>
-            <br />
+            <Box
+                component='img'
+                src='https://assets.zorincdn.com/zorin.com/images/home/hero.webp'
+                height={200}
+                width={200}
+            />
+            <br /> <br /> <br /> <br />
         </Box>
 
     )
